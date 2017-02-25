@@ -8,30 +8,56 @@ body {
 }
 
 .content-wrapper {
-  background: yellow;
+  background: lightgreen;
+  height: 100vh;
+  width: 80%;
 }
-
+/*Search Bar at top of page*/
 .search-bar {
-  background: green;
+  display: flex;
+  border: 1px solid green;
 }
 
-header {
-  background: orange;
+.job-item {
+  background: lightblue
 }
 
-/*#main-nav {
+#main-nav {
   display: flex;
   flex-direction: column;
-}*/
+  background: orange;
 
+}
 
+a {
+  text-decoration: none;
+}
 
 li {
   text-decoration: none;
   color: #FFF;
+  list-style: none;
 }
 
 #nav-job-board {
   background: pink;
-  /*display: flex;*/
+  display: flex;
+  font-size: .75em;
+  padding: 0 2px 10px 0;
+}
+
+.item-values {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFF;
+  padding: 5px;
+
+}
+
+.item-values h4 {
+  flex: 0 0 30%;
+}
+
+.item-values h5 {
+  flex: 0 0 70%;
 }
