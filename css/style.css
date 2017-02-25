@@ -4,4 +4,34 @@
 
 body {
   background-color: grey;
+  display: flex;
+}
+
+.content-wrapper {
+  background: yellow;
+}
+
+.search-bar {
+  background: green;
+}
+
+header {
+  background: orange;
+}
+
+/*#main-nav {
+  display: flex;
+  flex-direction: column;
+}*/
+
+
+
+li {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#nav-job-board {
+  background: pink;
+  /*display: flex;*/
 }
