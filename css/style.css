@@ -3,40 +3,81 @@
 }
 
 body {
-  background-color: grey;
   display: flex;
+  background-color: grey;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+/*building boxes*/
+body {
+  border: 1px solid green;
 }
 
+.search-bar {
+  border: 1px solid red;
+}
+
+
+
 .content-wrapper {
-  background: lightgreen;
+  background-color: #EDF2F6;
   height: 100vh;
   width: 80%;
 }
+
+
 /*Search Bar at top of page*/
 .search-bar {
   display: flex;
-  border: 1px solid green;
+  width: 100%;
+}
+
+.menu-icon-left-arrow,
+.person-plus,
+.calendar-icon,
+.select-more-options {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  flex: 0 0 50px;
+}
+
+#search-field {
+  flex: 0 0 70%;
+}
+
+
+/*main navigation styles*/
+#main-nav {
+  display: flex;
+  flex-direction: column;
+  background: #354052;
+  color: #FFF;
+  font-size: .75em;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #9FAABC;
+}
+
+a, li {
+  text-decoration: none;
+  color: #9FAABC;
+  list-style: none;
+  flex: 0 0;
+  margin: 0 5px;
 }
 
 .job-item {
   background: lightblue
 }
-
-#main-nav {
+.action-btns {
   display: flex;
-  flex-direction: column;
-  background: orange;
-
+  padding: 5px;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  text-decoration: none;
-  color: #FFF;
-  list-style: none;
+.action-btns a {
+  color: #B0B1B5;
 }
 
 #nav-job-board {
@@ -49,9 +90,8 @@ li {
 .item-values {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FFF;
+  background-color: #EDF2F6;
   padding: 5px;
-
 }
 
 .item-values h4 {
