@@ -91,8 +91,13 @@ a, li {
   color: #B0B1B5;
 }
 
+.action-btns button {
+  border-radius: 20px;
+  border: solid 1px black;
+}
+
 #job-board {
-  background: pink;
+  background: #FFF;
   display: flex;
   flex-wrap: wrap;
   font-size: .6em;
@@ -119,11 +124,28 @@ a, li {
 }
 
 .infographics {
+  display: flex;
+  align-items: center;
   width: 100%;
+
 }
+
+.circle-graph {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: blue blue blue grey;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
 .item-detail {
-  width: 60%;
+  width: 50%;
   border: 1px solid blue;
+  margin: 10px 50px;
+  box-sizing: border-box;
 }
 
 .item-values {
@@ -141,10 +163,13 @@ a, li {
   flex: 0 0 70%;
 }
 
+#edit-btn {
+  border: none;
+}
 #social-sidebar {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
 }
 
 #social-sidebar button {
