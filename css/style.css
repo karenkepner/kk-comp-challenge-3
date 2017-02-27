@@ -3,5 +3,167 @@
 }
 
 body {
+  display: flex;
   background-color: grey;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+/*building boxes*/
+body {
+  border: 1px solid green;
+}
+
+.search-bar {
+  border: 1px solid red;
+}
+#main-nav {
+  border: 1px solid orangered;
+}
+.job-item {
+  border: 1px solid blue;
+}
+#nav-job-board {
+  border: 2px dotted black;
+}
+.main-content {
+  border: 1px dashed brown;
+}
+.content-wrapper {
+  background-color: #EDF2F6;
+  height: 100vh;
+  width: 80%;
+}
+
+
+/*Search Bar at top of page*/
+.search-bar {
+  display: flex;
+  width: 100%;
+}
+
+.menu-icon-left-arrow,
+.person-plus,
+.calendar-icon,
+.select-more-options {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  flex: 0 0 50px;
+}
+
+#search-field {
+  flex: 0 0 70%;
+}
+
+
+/*main navigation styles*/
+#main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background: #354052;
+  color: #FFF;
+  font-size: .75em;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #9FAABC;
+}
+
+a, li {
+  text-decoration: none;
+  color: #9FAABC;
+  list-style: none;
+  flex: 0 0;
+  margin: 0 5px;
+}
+
+.job-item {
+  background: lightblue
+}
+.action-btns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.action-btns a {
+  color: #B0B1B5;
+}
+
+#job-board {
+  background: pink;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .6em;
+  padding: 30px 2px 0 0;
+  margin: 0;
+}
+
+#job-board li {
+  flex: 0 0 80px;
+  border-bottom: 2px solid #FFF;
+}
+
+#job-board li:hover {
+  border-bottom: 2px solid #303B4D;
+}
+
+#job-board #summary {
+  border-bottom: 2px solid #303B4D;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infographics {
+  width: 100%;
+}
+.item-detail {
+  width: 60%;
+  border: 1px solid blue;
+}
+
+.item-values {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #EDF2F6;
+  padding: 5px;
+}
+
+.item-values h4 {
+  flex: 0 0 30%;
+}
+
+.item-values h5 {
+  flex: 0 0 70%;
+}
+
+#social-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#social-sidebar button {
+  display: flex;
+  border-style: none;
+  margin: 5px;
+  padding: 5px;
+  width: 80%;
+  align-self: center;
+}
+
+#social-sidebar button img {
+  flex:0 0 30%;
+}
+
+#social-sidebar button h5 {
+  flex:0 0 70%;
+}
+
+button#copy {
+  border-style: none;
 }

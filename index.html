@@ -4,30 +4,56 @@
     <title>Comp 3</title>
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   </head>
   <body>
+  <header id="main-nav">
+    <ul class="navigation">
+      <li>Main</li>
+      <li><img src="images/home.svg" width="20" alt="list-icon"/><a href="#">HOME</a></li>
+      <li><img src="images/resume.svg" width="20" alt="list-icon"/><a href="#">JOBS</a></li>
+      <li><img src="images/resume.svg" width="20" alt="list-icon"/><a href="#">RESUMES</a></li>
+      <li><img src="images/calendar.svg" width="20" alt="list-icon"/><a href="#">TASKS</a></li>
+      <li><img src="images/calendar.svg" width="20" alt="list-icon"/><a href="#">CALENDAR</a></li>
+    </ul>
+    <ul class="navigation">
+      <li>Admin</li>
+      <li><img src="images/contact-interface-symbol.svg" width="20" alt="list-icon"/><a href="#">USERS</a></li>
+      <li><img src="images/location.svg" width="20" alt="list-icon"/><a href="#">LOCATIONS</a></li>
+      <li><img src="images/share.svg" width="20" alt="list-icon"/><a href="#">WORKFLOWS</a></li>
+      <li><img src="images/share.svg" width="20" alt="list-icon"/><a href="#">JOB BOARDS</a></li>
+      <li><img src="images/share.svg" width="20" alt="list-icon"/><a href="#">SOCIAL</a></li>
+    </ul>
+    <ul class="navigation">
+      <li>Categories</li>
+      <li><input type="checkbox"></input><a href="#">Administration</a></li>
+      <li><input type="checkbox"></input><a href="#">Design</a></li>
+      <li><input type="checkbox"></input><a href="#">Executive</a></li>
+      <li><input type="checkbox"></input><a href="#">Human Resources</a></li>
+    </ul>
+  </header>
   <main class="content-wrapper">
     <section class="search-bar">
-      <div class="menu-icon-left-arrow"></div>
+      <div class="menu-icon-left-arrow"><img src="images/list.svg" width="40" alt="list-icon"/></div>
       <input type="text" id="search-field" name="search" placeholder="Search for a job, task, or resume.">
-      <div class="person-plus"></div>
-      <div class="calendar-icon"></div>
-      <div class="select-more-options"></div>
+      <div class="person-plus"><img src="images/contact-interface-symbol.svg" width="40" alt="list-icon"/></div>
+      <div class="calendar-icon"><img src="images/calendar.svg" width="40" alt="list-icon"/></div>
+      <div class="select-more-options"><img src="images/menu-sq.svg" width="40" alt="list-icon"/></div>
     </section>
-    <header>
+    <header class="job-item">
       <h2>Customer Service Representative</h2>
-      <img src="" alt="location icon"/>
+      <img src="images/location.svg" width="20" alt="location icon"/>
       <h3>San Francisco, CA  <span class="highlight-color">Preview this post</span></h3>
-      <ul>
+      <ul class="action-btns">
         <li><a href="#">OPEN</a></li>
         <li><a href="#">bookmark</a></li>
         <li><a href="#">pencil</a></li>
         <li><a href="#">trash</a></li>
       </ul>
     </header>
-    <nav class="nav-job-board">
-      <ul>
-        <li><a href="#">SUMMARY</a></li>
+    <nav id="nav-job-board">
+      <ul id="job-board">
+        <li id="summary"><a href="#">SUMMARY</a></li>
         <li><a href="#">APPLICANTS</a></li>
         <li><a href="#">JOB BOARD</a></li>
         <li><a href="#">INTERVIEWS</a></li>
@@ -36,7 +62,39 @@
         <li><a href="#">NOTIFICATIONS</a></li>
       </ul>
     </nav>
-
+    <section class="main-content">
+      <article class="infographics">
+        <div class="position-info"></div>
+        <label>TOTALS * Out of 5,231 views</label>
+        <div class="application-graph"></div>
+        <label>Applicants/Day</label>
+      </article>
+      <article class="item-detail">
+        <h4>JOB DESCRIPTION</h4>
+        <button id="edit-btn">EDIT</button>
+        <div class="item-values">
+          <h4>POSITION TITLE</h4><h5>Customer Service Representative</h5>
+          <h4>LOCATION</h4><h5>San Francisco, CA</h5>
+          <h4>EMPLOYMENT TYPE</h4><h5>Full Time</h5>
+          <h4>EXPERIENCE</h4><h5>Mid-level</h5>
+          <h4>STATUS</h4><h5>Open</h5>
+          <h4>DESCRIPTION</h4><p>Customer Service Representative Customer Service Representative Customer Service Representative</p>
+          <h4>HIRING LEAD</h4><h5>Tom Tizzy</h5>
+          <h4>APPROVED SALARY</h4><h5>$85,000</h5>
+        </div>
+      </article>
+      <aside id="social-sidebar">
+        <button><img src="images/home.svg" alt="facebook" width="10"/><h5>Post to Facebook</h5></button>
+        <button><img src="images/home.svg" alt="twitter" width="10"/><h5>Post to Twitter</h5></button>
+        <button><img src="images/home.svg" alt="linked in" width="10"/><h5>Post to LinkedIN</h5></button>
+        <article>
+          <h4>Link to this Job</h4>
+          <p>Advection fog air mass blocking wall gust front shear specific humidity squall.</p>
+          <input type="url" placeholder="http://arapahoebasin.com"></input>
+          <button id="copy">Copy</button>
+        </article>
+      </aside>
+    </section>
   </main>
 
   </body>
