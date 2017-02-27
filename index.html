@@ -26,10 +26,10 @@
     </ul>
     <ul class="navigation">
       <li>Categories</li>
-      <li><img src="images/list.svg" width="20" alt="list-icon"/><a href="#">Administration</a></li>
-      <li><img src="images/list.svg" width="20" alt="list-icon"/><a href="#">Design</a></li>
-      <li><img src="images/list.svg" width="20" alt="list-icon"/><a href="#">Executive</a></li>
-      <li><img src="images/list.svg" width="20" alt="list-icon"/><a href="#">Human Resources</a></li>
+      <li><input type="checkbox"></input><a href="#">Administration</a></li>
+      <li><input type="checkbox"></input><a href="#">Design</a></li>
+      <li><input type="checkbox"></input><a href="#">Executive</a></li>
+      <li><input type="checkbox"></input><a href="#">Human Resources</a></li>
     </ul>
   </header>
   <main class="content-wrapper">
@@ -51,9 +51,9 @@
         <li><a href="#">trash</a></li>
       </ul>
     </header>
-    <nav>
-      <ul id="nav-job-board">
-        <li><a href="#">SUMMARY</a></li>
+    <nav id="nav-job-board">
+      <ul id="job-board">
+        <li id="summary"><a href="#">SUMMARY</a></li>
         <li><a href="#">APPLICANTS</a></li>
         <li><a href="#">JOB BOARD</a></li>
         <li><a href="#">INTERVIEWS</a></li>
@@ -83,6 +83,17 @@
           <h4>APPROVED SALARY</h4><h5>$85,000</h5>
         </div>
       </article>
+      <aside id="social-sidebar">
+        <button><img src="images/home.svg" alt="facebook" width="10"/><h5>Post to Facebook</h5></button>
+        <button><img src="images/home.svg" alt="twitter" width="10"/><h5>Post to Twitter</h5></button>
+        <button><img src="images/home.svg" alt="linked in" width="10"/><h5>Post to LinkedIN</h5></button>
+        <article>
+          <h4>Link to this Job</h4>
+          <p>Advection fog air mass blocking wall gust front shear specific humidity squall.</p>
+          <input type="url" placeholder="http://arapahoebasin.com"></input>
+          <button id="copy">Copy</button>
+        </article>
+      </aside>
     </section>
   </main>
 
