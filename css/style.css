@@ -11,25 +11,10 @@ body {
   border: 1px solid orangered;
 }*/
 
-/*.search-bar {
-  border: 1px solid red;
-}
-#main-nav {
-  border: 1px solid orangered;
-}
-.job-item {
-  border: 1px solid blue;
-}
-#nav-job-board {
-  border: 2px dotted black;
-}
-.main-content {
-  border: 1px dashed brown;
-}*/
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /*height: 100vh;*/
   width: 80%;
 }
 
@@ -291,7 +276,7 @@ button.open {
 /*job description*/
 .item-detail {
   width: 50%;
-  border: 1px solid blue;
+  border: 1px solid grey;
   margin: 10px 50px;
   box-sizing: border-box;
 }
@@ -352,6 +337,10 @@ button.open {
   flex: 0 0 70%;
 }
 
+#social-sidebar h3 {
+  font-size: 1.05em;
+}
+
 button.facebook {
   background-color: #3B5998;
 }
@@ -385,8 +374,35 @@ button#copy {
     flex-direction: column;
   }
 
-  .social-sidebar,
+  #social-sidebar,
   .item-detail {
     width: 100%;
+    align-items: center;
+    margin: 5px;
   }
+
+  .item-detail {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #main-nav {
+    display: none;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 675px) {
+
+}
+
+@media (max-width: 460px) {
+  .infographics {
+    display: flex;
+    flex-direction: column;
+
 }
