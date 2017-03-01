@@ -4,17 +4,13 @@
 
 body {
   display: flex;
+  width: 100%;
   font-family: 'Merriweather Sans', sans-serif;
 }
-/*building boxes*/
-/*body * {
-  border: 1px solid orangered;
-}*/
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  /*height: 100vh;*/
   width: 80%;
 }
 
@@ -31,7 +27,6 @@ li {
 .search-bar {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: center;*/
   align-items: center;
   width: 100%;
   min-height: 50px;
@@ -113,6 +108,10 @@ li {
   height: 70px;
 }
 
+.framed img {
+ margin-top: 5px;  
+}
+
 .navigation {
   border-bottom: 3px solid #222833;
   width: 100%;
@@ -132,7 +131,8 @@ ul.navigation {
 }
 
 .job-item h3 {
-  display: inline;
+  display: inline-block;
+  width: 90%;
   font-size: .75em;
 }
 
@@ -167,6 +167,9 @@ button.open {
   font-size: .8em;
 }
 
+.job-menu {
+  display: none;
+}
 
 #job-board {
   background: #FFF;
@@ -196,13 +199,9 @@ button.open {
   background-color: #EDF2F6;
 }
 
-.infographics {
-  /*display: flex;
-  align-items: center;*/
-}
-
 .circles {
   display: flex;
+  justify-content: center;
   width: 100%;
   padding: 20px;
 }
@@ -251,6 +250,7 @@ button.open {
 .application-graph {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 20px 40px;
 }
 
@@ -296,6 +296,7 @@ button.open {
 
 .item-title h4{
   display: inline-block;
+  font-size: .75em;
 }
 
 .item-values h4 {
@@ -310,6 +311,9 @@ button.open {
 
 #edit-btn {
   border: none;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: .75em;
+  color: grey;
 }
 
 #social-sidebar {
@@ -361,11 +365,17 @@ button.linkedin {
 
 .link-job input {
   height: 50px;
+  width: 90%;
+}
+
+.link-job .input-link {
+  width: 100%;
 }
 
 button#copy {
  height: 50px;
  width: 50px;
+ margin-left: 0;
 }
 
 @media (max-width: 850px) {
@@ -374,11 +384,27 @@ button#copy {
     flex-direction: column;
   }
 
+  #job-board {
+    flex: 0 0 50px;
+  }
+
+  #job-board li {
+      flex: 0 0 30px;
+  }
+
+  #job-board li.no-stack {
+    min-width: 65px;
+  }
+
   #social-sidebar,
   .item-detail {
     width: 100%;
     align-items: center;
     margin: 5px;
+  }
+
+  #social-sidebar article {
+    padding: 10px;
   }
 
   .item-detail {
@@ -393,16 +419,27 @@ button#copy {
   .content-wrapper {
     width: 100%;
   }
-
 }
 
-@media (max-width: 675px) {
 
-}
-
-@media (max-width: 460px) {
+@media (max-width: 560px) {
   .infographics {
-    display: flex;
     flex-direction: column;
+  }
 
+  .circles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-job-board {
+    display: none;
+  }
+
+  .job-menu {
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-left: 10px;
+  }
 }

@@ -5,12 +5,13 @@
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-    <!-- <meta name="viewport" content="width=device width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
   <header id="main-nav">
     <div class="login">
-      <div class="framed"><img src="images/github-blue.svg" alt="tiny photo of user" width="40"/></div>
+      <div class="framed">
+      <img src="images/github-blue.svg" alt="tiny photo of user" width="40"/></div>
       <h4>Ford Prefect</h4>
       <img src="images/chevron-arrow-down.svg" alt="tiny photo of user" width="10"/>
     </div>
@@ -40,7 +41,7 @@
   </header>
   <main class="content-wrapper">
     <section class="search-bar">
-      <div class="menu-icon-left-arrow"><img src="images/list.svg" width="20" alt="list-icon"/></div>
+      <div class="menu-icon-left-arrow"><img src="images/menu.svg" width="20" alt="list-icon"/></div>
       <input type="text" id="search-field" name="search" placeholder="Search for a job, task, or resume.">
       <div class="person-plus"><img src="images/contact-interface-symbol.svg" width="20" alt="list-icon"/></div>
       <div class="calendar-icon"><img src="images/calendar.svg" width="20" alt="list-icon"/></div>
@@ -50,6 +51,7 @@
       <h2>Customer Service Representative</h2>
       <img src="images/location.svg" width="20" alt="location icon"/>
       <h3>San Francisco, CA  <span class="highlight-color">Preview this post</span></h3>
+      <div class="job-menu"><img src="images/menu.svg" width="20" alt="list-icon"/></div>
       <ul class="action-btns">
         <li><button class="open"><a href="#"><img src="images/circle.svg" alt="green circle" width="10"> OPEN</a></button></li>
         <li><button><a href="#"><img src="images/bookmark.svg" alt="bookmark" width="10"></a></button></li>
@@ -61,7 +63,7 @@
       <ul id="job-board">
         <li id="summary"><a href="#" class="selected">SUMMARY</a></li>
         <li><a href="#">APPLICANTS</a></li>
-        <li><a href="#">JOB BOARD</a></li>
+        <li class="no-stack"><a href="#">JOB BOARD</a></li>
         <li><a href="#">INTERVIEWS</a></li>
         <li><a href="#">ACTIVITY</a></li>
         <li><a href="#">BROADCAST</a></li>
@@ -91,7 +93,7 @@
       <article class="item-detail">
         <div class="item-title">
         <h4>JOB DESCRIPTION</h4>
-        <button id="edit-btn"><img src="images/pencil.svg" width="10" />EDIT</button>
+        <button id="edit-btn"><img src="images/pencil.svg" width="10" /> EDIT</button>
         </div>
         <div class="item-values">
           <h4>POSITION TITLE</h4><h5>Customer Service Representative</h5>
@@ -99,7 +101,7 @@
           <h4>EMPLOYMENT TYPE</h4><h5>Full Time</h5>
           <h4>EXPERIENCE</h4><h5>Mid-level</h5>
           <h4>STATUS</h4><h5>Open</h5>
-          <h4>DESCRIPTION</h4><p>Customer Service Representative Customer Service Representative Customer Service Representative</p>
+          <h4>DESCRIPTION</h4><h5>Customer stormy low clouds service fish cat superhero</h5>
           <h4>HIRING LEAD</h4><h5>Tom Tizzy</h5>
           <h4>APPROVED SALARY</h4><h5>$85,000</h5>
         </div>
@@ -120,7 +122,7 @@
           <h3><img src="images/link.svg" alt="link icon" width="15"/> Use the Button Widget</h3>
           <p>Advection fog air mass blocking wall gust front shear specific humidity squall.</p>
           <div class="link-job">
-            <input type="url" placeholder="http://arapahoebasin.com"></input>
+            <input type="url" placeholder="<script>Use the Button</script>"></input>
             <button type="button" name="copy-button" id="copy">Copy</button>
           </div>
         </article>
@@ -128,8 +130,7 @@
           <h3><img src="images/link.svg" alt="link icon" width="15"/> Upload Resumes By Email</h3>
           <p>Advection fog air mass blocking wall gust front shear specific humidity squall.</p>
           <div class="link-job">
-            <input type="url" placeholder="http://arapahoebasin.com"></input>
-            <button type="button" name="copy-button" id="copy">Copy</button>
+            <input class="input-link" type="url" placeholder="submit@greatplacetowork.com"></input>
           </div>
         </article>
       </aside>
