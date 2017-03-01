@@ -86,6 +86,7 @@ li {
   align-items: flex-start;
   width: 20%;
   min-width: 170px;
+  max-width: 200px;
   background: #354052;
   color: #FFF;
   font-size: .75em;
@@ -105,10 +106,11 @@ li {
   margin: 0 5px;
   padding: 5px;
 }
+
 .login {
   margin: 20px 0;
   color: #B0B1B5;
-  border-bottom: 5px solid #222833;
+  border-bottom: 3px solid #222833;
   width: 100%;
   text-align: center;
 }
@@ -127,8 +129,12 @@ li {
 }
 
 .navigation {
-  border-bottom: 5px solid #222833;
+  border-bottom: 3px solid #222833;
   width: 100%;
+}
+
+ul.navigation {
+  padding: 10px 20px;
 }
 
 /*header styles*/
@@ -213,14 +219,21 @@ button.open {
 }
 
 .circle-graph {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-style: solid;
   border-width: 8px;
   border-color: blue blue blue grey;
-  border-radius: 50%;
-  padding: 5px;
+  border-radius: 130px;
+  padding: 25px;
+  margin: 5px;
   text-align: center;
+}
+
+.labels {
+  background-color: none;
+  border: 1px solid grey;
+  border-radius: 50px;
 }
 
 .item-detail {
@@ -233,9 +246,10 @@ button.open {
 .item-values {
   display: flex;
   flex-wrap: wrap;
-  background-color: #EDF2F6;
+  background-color: #FFF;
   padding: 5px;
 }
+
 .item-title {
   background-color: #31384B;
   color: #FFF;
@@ -268,23 +282,26 @@ button.open {
 #social-sidebar button {
   display: flex;
   border-style: none;
+  height: 50px;
   margin: 5px;
   padding: 5px;
-  width: 80%;
+  width: 90%;
   align-self: center;
 }
 
 #social-sidebar button img {
-  flex:0 0 30%;
+  flex: 0 0 20px;
+  /*align-content: center;*/
 }
 
 #social-sidebar button h5 {
-  flex:0 0 70%;
+  flex: 0 0 70%;
 }
 
 button.facebook {
   background-color: #3B5998;
 }
+
 button.tweet {
   background-color: #1DA1F2;
 }
