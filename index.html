@@ -5,7 +5,7 @@
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-    <meta name="viewport" content="width=device width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device width, initial-scale=1"> -->
   </head>
   <body>
   <header id="main-nav">
@@ -70,19 +70,24 @@
     </nav>
     <section class="main-content">
       <article class="infographics">
-        <div>
-          <div class="circle-graph">3,154 APPLICANTS</div>
-          <div class="circle-graph">1,546 INTERVIEWS</div>
-          <div class="circle-graph">911 FORWARDS</div>
+        <div class="circles">
+          <div class="circle-graph circle1"><h2>3,154</h2><h4>APPLICANTS</h4></div>
+          <div class="circle-graph circle2"><h2>1,546</h2><h4>INTERVIEWS</h4></div>
+          <div class="circle-graph circle3"><h2>911</h2><h4>FORWARDS</h4></div>
         </div>
         <div class="position-info">
           <button class="labels">TOTALS * Out of 5,231 views</button>
         </div>
-        <div class="application-graph">
-          <img src="images/chart.png" alt="really awesome graph" width="200"/>
-        </div>
-        <button class="labels">Applicants/Day</button>
       </article>
+        <div class="application-graph">
+          <img src="images/chart.png" alt="really awesome graph" width="280"/>
+          <button class="labels btn-size">APPLICANTS/DAY</button>
+        </div>
+      <div class="horizon">
+        <div class="divider-line"></div>
+        <img src="images/up-chevron-button.svg" alt="up arrow and horizontal line" width="20"/>
+        <div class="divider-line"></div>
+      </div>
       <article class="item-detail">
         <div class="item-title">
         <h4>JOB DESCRIPTION</h4>
