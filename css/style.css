@@ -329,13 +329,13 @@ button.open {
   border-style: none;
   height: 50px;
   margin: 5px;
-  padding: 5px;
+  padding: 0;
   width: 90%;
 }
 
 #social-sidebar button img {
   flex: 0 0 20px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 #social-sidebar button h5 {
