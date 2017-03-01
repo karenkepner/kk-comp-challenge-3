@@ -11,7 +11,7 @@ body {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 
 a,
@@ -109,7 +109,7 @@ li {
 }
 
 .framed img {
- margin-top: 5px;  
+ margin-top: 5px;
 }
 
 .navigation {
@@ -335,14 +335,17 @@ button.open {
 
 #social-sidebar button img {
   flex: 0 0 20px;
+  margin-bottom: 15px;
 }
 
 #social-sidebar button h5 {
   flex: 0 0 70%;
+  margin-bottom: 15px;
 }
 
 #social-sidebar h3 {
   font-size: 1.05em;
+  margin-bottom: 5px;
 }
 
 button.facebook {
