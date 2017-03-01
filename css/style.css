@@ -212,10 +212,18 @@ button.open {
 }
 
 .infographics {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  /*display: flex;
+  align-items: center;*/
+}
 
+.circles {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.position-info {
+  text-align: center;
 }
 
 .circle-graph {
@@ -223,19 +231,64 @@ button.open {
   height: 130px;
   border-style: solid;
   border-width: 8px;
-  border-color: blue blue blue grey;
+  border-color: blue grey blue blue ;
   border-radius: 130px;
   padding: 25px;
   margin: 5px;
   text-align: center;
 }
 
-.labels {
-  background-color: none;
-  border: 1px solid grey;
-  border-radius: 50px;
+.circle-graph h2{
+  margin: auto;
 }
 
+.circle-graph h4 {
+  font-size: .75em;
+}
+
+.circle2 {
+  border-color: grey grey blue blue ;
+}
+
+.circle3 {
+  border-color: blue grey grey grey;
+}
+
+.labels {
+  background-color: #FFF;
+  border: 1px solid grey;
+  border-radius: 50px;
+  font-size: .75em;
+  /*align-content: center;*/
+  padding-top: 5px;
+}
+
+.application-graph {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.btn-size {
+  width: 150px;
+  align-self: center;
+}
+
+/*decorative dividing line*/
+.horizon {
+  /*display: flex;*/
+  display: inline-block;
+  width: 100%;
+}
+
+.divider-line {
+  display: inline-block;
+  width: 45%;
+  border-bottom: 2px solid grey;
+}
+
+
+/*job description*/
 .item-detail {
   width: 50%;
   border: 1px solid blue;
@@ -267,6 +320,7 @@ button.open {
 
 .item-values h5 {
   flex: 0 0 70%;
+  font-size: .75em;
 }
 
 #edit-btn {
@@ -281,17 +335,17 @@ button.open {
 
 #social-sidebar button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: none;
   height: 50px;
   margin: 5px;
   padding: 5px;
   width: 90%;
-  align-self: center;
 }
 
 #social-sidebar button img {
   flex: 0 0 20px;
-  /*align-content: center;*/
 }
 
 #social-sidebar button h5 {
@@ -310,6 +364,29 @@ button.linkedin {
   background-color: #0077B5;
 }
 
+.link-job {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.link-job input {
+  height: 50px;
+}
+
 button#copy {
-  border-style: none;
+ height: 50px;
+ width: 50px;
+}
+
+@media (max-width: 850px) {
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .social-sidebar,
+  .item-detail {
+    width: 100%;
+  }
 }
