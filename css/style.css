@@ -4,12 +4,9 @@
 
 body {
   display: flex;
+  width: 100%;
   font-family: 'Merriweather Sans', sans-serif;
 }
-/*building boxes*/
-/*body * {
-  border: 1px solid orangered;
-}*/
 
 .content-wrapper {
   display: flex;
@@ -396,13 +393,18 @@ button#copy {
 
 }
 
-@media (max-width: 675px) {
+/*@media (max-width: 675px) {
 
-}
+}*/
 
 @media (max-width: 460px) {
   .infographics {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
+  }
 
+  .circles {
+    flex-direction: column;
+    background-color: yellow;
+  }
 }
