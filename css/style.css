@@ -288,7 +288,6 @@ button.open {
 }
 
 
-
 /*job description*/
 .item-detail {
   width: 50%;
@@ -336,17 +335,17 @@ button.open {
 
 #social-sidebar button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: none;
   height: 50px;
   margin: 5px;
   padding: 5px;
   width: 90%;
-  align-self: center;
 }
 
 #social-sidebar button img {
   flex: 0 0 20px;
-  /*align-content: center;*/
 }
 
 #social-sidebar button h5 {
@@ -365,6 +364,29 @@ button.linkedin {
   background-color: #0077B5;
 }
 
+.link-job {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.link-job input {
+  height: 50px;
+}
+
 button#copy {
-  border-style: none;
+ height: 50px;
+ width: 50px;
+}
+
+@media (max-width: 850px) {
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .social-sidebar,
+  .item-detail {
+    width: 100%;
+  }
 }
